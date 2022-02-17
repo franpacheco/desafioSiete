@@ -1,0 +1,14 @@
+/*MIXIN*/
+
+@mixin animaciones($transformaciones){
+    transform: $transformaciones;
+        
+    }
+
+    .botonPresencial:hover{
+        @include animaciones(scale(110%))
+    }
+
+    .botonVirtual:hover{
+        @include animaciones(scale(110%))
+    }

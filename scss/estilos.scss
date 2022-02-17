@@ -1,0 +1,64 @@
+@import "base/variables";
+@import"base/maps";
+@import "components/cursos";
+@import"base/extend";
+@import"base/mixin";
+
+body{
+    background-color: $Color-Principal;
+
+    .logo{
+        width: 50%;
+    }
+
+    .menuPrincipal{
+        position: fixed;
+    }
+    
+    .navbar .nav-item:not(:last-child) {
+        margin-right: 35px;
+      }
+      
+      .dropdown-toggle::after {
+         transition: transform 0.15s linear; 
+      }
+      
+      .show.dropdown .dropdown-toggle::after {
+        transform: translateY(3px);
+      }
+
+      .subMenuCursos{
+          background-color: $color-Terciario;
+      }
+
+      .subMenuTienda{
+          background-color: $color-Terciario;
+          
+      }
+    
+    
+    
+    header{
+        .subTitulo a{
+            text-decoration: none;
+            color: black;
+            font-size:larger;
+        }
+    }
+    
+    main{
+    
+        .imagenIndex{
+            width: 100%;
+        }
+    
+        .pieDeImagenIndex{
+            font-size: 25px;
+        }
+    
+    }
+    
+    .navegacion{
+        background-color:$color-Secundario;
+    }
+}

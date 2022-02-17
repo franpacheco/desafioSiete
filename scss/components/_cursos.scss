@@ -1,0 +1,13 @@
+ul{
+    .botonPresencial{
+        background-color: map-get($botonPresencial, bg);
+        @extend %borderBotones
+    }
+
+    .botonVirtual{
+        background-color: map-get($botonVirtual, bg);
+        @extend %borderBotones
+    }
+}
+
+
